@@ -26,6 +26,7 @@ print(int(line_2[index_2:]) + 10)
 print(int(line_3[index_3:]) + 10)
 
 
+
 students = ['Ivanov', 'Petrov', 'Sidorov']
 subjects = ['math', 'biology', 'geography']
 

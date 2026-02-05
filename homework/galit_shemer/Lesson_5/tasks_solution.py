@@ -1,12 +1,17 @@
 person = ['John', 'Doe', 'New York', '+1372829383739', 'US']
 name, last_name, city, phone, country = person
 
-print(name)
-print(last_name)
-print(city)
-print(phone)
-print(country)
 
+def extract_and_add_10(result):
+    colon_index = result.index(':') + 1
+    number_str = result[colon_index:].strip()
+    number = int(number_str)
+    return number + 10
+
+
+result_1 = "результат операции: 42"
+result_2 = "результат операции: 514"
+result_3 = "результат работы программы: 9"
 
 line_1 = 'результат операции: 42'
 line_2 = 'результат операции: 514'

@@ -1,9 +1,11 @@
 person = ['John', 'Doe', 'New York', '+1372829383739', 'US']
 name, last_name, city, phone, country = person
 
+
 def extract_and_add_10(result):
     number = int(result.split(':')[-1].strip())
     return number + 10
+
 
 results = [
     'результат операции: 42',

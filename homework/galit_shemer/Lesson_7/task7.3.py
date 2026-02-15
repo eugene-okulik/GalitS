@@ -1,7 +1,11 @@
 def process_result_line(line):
+
+
     parts = line.split()
     number = int(parts[-1])
     return number + 10
+
+
 lines = [
     "результат операции: 42",
     "результат операции: 54",

@@ -1,3 +1,5 @@
+
+
 def process_result_line(line):
     parts = line.split()
     number = int(parts[-1])
@@ -8,6 +10,7 @@ lines = [
     "результат работы программы: 209",
     "результат: 2"
 ]
+
 
 for line in lines:
     result = process_result_line(line)

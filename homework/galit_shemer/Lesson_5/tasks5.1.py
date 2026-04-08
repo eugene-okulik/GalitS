@@ -13,10 +13,18 @@ results = [
     'результат работы программы: 9'
 ]
 
+
 for r in results:
     print(extract_and_add_10(r))
+
 
 students = ['Ivanov', 'Petrov', 'Sidorov']
 subjects = ['math', 'biology', 'geography']
 
-print(f"Students {', '.join(students)} study these subjects: {', '.join(subjects)}")
+
+print(
+    "Students "
+    + ", ".join(students)
+    + " study these subjects: "
+    + ", ".join(subjects)
+)

@@ -5,4 +5,5 @@ words = {
 }
 
 for word, count in words.items():
-    print(word, count)
+    print(word * count)
+

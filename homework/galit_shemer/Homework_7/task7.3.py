@@ -1,5 +1,3 @@
-
-
 def extract_and_add_10(text):
     number = int(text.split(":")[-1].strip())
     return number + 10

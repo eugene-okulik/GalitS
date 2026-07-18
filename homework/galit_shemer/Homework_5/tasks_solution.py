@@ -3,7 +3,8 @@ name, last_name, city, phone, country = person
 
 
 def extract_and_add_10(result):
-    number = int(result.split(':')[-1].strip())
+    colon_index = result.index(':')
+    number = int(result[colon_index + 1:])
     return number + 10
 
 

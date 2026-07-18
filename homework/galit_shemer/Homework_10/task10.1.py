@@ -11,24 +11,8 @@ def finish_me(func):
     return wrapper
 
 
-def repeat_me(func=None, *, count=1):
-    if func is None:
+@finish_me
+def example(text):
+    print(text)
 
-        def decorator(inner_func):
-
-            @wraps(inner_func)
-            def wrapper(*args, **kwargs):
-                for _ in range(count):
-                    inner_func(*args, **kwargs)
-
-            return wrapper
-
-        return decorator
-
-    @wraps(func)
-    def wrapper(*args, **kwargs):
-        times = kwargs.pop("count", count)
-        for _ in range(times):
-            func(*args, **kwargs)
-
-    return wrapper
+example("print me")
